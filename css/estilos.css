@@ -1,0 +1,61 @@
+/*Estructura de css 
+selector{ 
+    propiedad:valor
+}
+*/
+body{
+    background-color: rgb(220, 183, 255);
+}
+h1,h2{
+    text-align: center;
+}
+header{
+    background-image: url('../img/header.jpg');
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 80%;
+}
+header h1{
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+}
+nav {
+    background-color: transparent;
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 50px;
+}
+nav ol li{
+    background-color: rgb(44, 43, 43);
+    display: inline;
+    color: white;
+    padding: 15px;
+    margin: 0px 10px;
+}
+article{
+   padding-top: 100px;
+   background: linear-gradient(rgba(255, 0, 0, 0.411),rgba(255, 255, 0, 0.52));
+   width: 80%;
+   margin-left: 10%;
+}
+article#casera{
+    background: linear-gradient(rgba(0, 128, 0, 0.424)0, 128, 0, 0.527),rgba(255, 255, 0, 0.582));
+}
+
+nav ol li a{
+    text-decoration: none;
+    color: white;
+}
+nav ol li:hover{
+    background-color: rgba(44, 43, 43, 0.418);
+    color: black;
+    box-shadow: 5px 3px 5px black;
+}
+nav ol li a:hover{
+    color: black;
+}
