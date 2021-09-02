@@ -16,6 +16,8 @@ header{
     justify-content: flex-end;
     position: fixed;
     width: 80%;
+    top: 0px;
+    margin-left: 10%;
 }
 header h1{
     background-color: rgba(255, 255, 255, 0.616);
@@ -40,10 +42,10 @@ nav ol li{
 article{
    padding-top: 100px;
    background: linear-gradient(rgba(255, 0, 0, 0.411),rgba(255, 255, 0, 0.52));
-   width: 80%;
+    width: 80%;
    margin-left: 10%;
 }
-article#casera{
+article #casera{
     background: linear-gradient(rgba(0, 128, 0, 0.424)0, 128, 0, 0.527),rgba(255, 255, 0, 0.582));
 }
 
@@ -58,4 +60,30 @@ nav ol li:hover{
 }
 nav ol li a:hover{
     color: black;
+}
+.rojo{
+    background-color: red;
+    width: 25%;
+    height: 300px;
+    color: yellow;
+    font-size: 25px;
+    margin: 5px;
+}
+#negro{
+    background-color: black;
+    color: white;
+}
+#principal{
+    display: flex;
+    justify-content: center;
+}
+main{
+    /* width: 80%; */
+}
+h4 font{
+
+    color: black !important;
+}
+h4 font{
+    color: blue;
 }
