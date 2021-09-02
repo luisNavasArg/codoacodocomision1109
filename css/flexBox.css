@@ -1,0 +1,43 @@
+#justify,#otra{
+    display: flex;
+   /*justify-content: center;para centrar los hijos*/
+  /* justify-content: flex-end; para posisicionar al final*/
+ /* justify-content: flex-start; el que viene por defecto */
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* justify-content: space-evenly; */
+}
+.primer{
+    /* width: 150px;
+    height: 150px; */
+    width: 25%;
+
+    background-color: blueviolet;
+    /* float: left; */
+}
+.primer:after{
+    content: 'Este es depués de el contenido';
+    color: white;
+    font-size: 20px;
+}
+.primer::before{
+    content: "esto es para antes del contenido";
+    color: yellow;
+}
+.primer::first-letter{
+    color: blue;
+    font-size: 30px;
+}
+.blue{
+    background-color: blue;
+}
+li{
+    display: inline;
+}
+span{
+    display: block;
+}
+.principal{
+    display:flex;
+    flex-wrap: wrap;
+}
