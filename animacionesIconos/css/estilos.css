@@ -1,0 +1,60 @@
+body{
+    background-color: rgba(137, 43, 226, 0.616);
+}
+@keyframes mover {
+    from{top:50px;color:aqua;}
+    to{top: 250px;color: black;}
+}
+#flecha{
+    position: absolute;
+    left: 180px;
+    /* animation-name: mover;
+    animation-duration: 5s; */
+    /* animation: mover 5s 2s infinite reverse; */
+    
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#pelota{   
+   animation-name:fadeIn,otra,fadeIn; 
+   animation-duration: 15s,5s,5s;
+   /* animation-delay: 5s,7s,2s; */
+}
+
+@keyframes otra {
+    0%{color: brown;}
+    25%{color: yellow;}
+    50%{color: green;}
+}
+ul li{
+    display: inline;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+ul li:hover{
+    animation-name: menu;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes menu {
+   0%{
+       padding: 10px;
+        background-color: black;
+        color: white;
+    } 
+    100%{
+        padding: 20px;
+        background-color: white;
+        color: black;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 40px;
+        font-size: 30px;
+    }
+}
+
+
