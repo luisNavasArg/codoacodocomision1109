@@ -1,0 +1,22 @@
+.backgroundjt {
+  background-image: url("./assets/hawaii.jpg");
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40rem;
+}
+
+.card-group {
+  /* margin: 0rem 15rem; */
+}
+
+.card {
+  margin: 1rem;
+}
+#footer{
+  /* position: fixed;
+  bottom: 0px; */
+ 
+}
