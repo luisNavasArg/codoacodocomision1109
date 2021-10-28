@@ -22,5 +22,4 @@ public class Juego {
     public String mostrar_vidas(){
         return "Soy " + this.personaje +" Tengo "+ this.vidas + " Vidas"; 
     }
-    
 }
