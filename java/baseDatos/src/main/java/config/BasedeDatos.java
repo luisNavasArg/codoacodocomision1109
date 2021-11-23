@@ -38,7 +38,7 @@ public class BasedeDatos {
              String email = rs.getString("email");
              String telefono = rs.getString("telefono");
             System.out.println("id: "+ id +" Nombres: "+ nombres +" Apellidos: "
-                    +apellidos+ "Email: "+ email + "Telefono: "+telefono);
+                    +apellidos+ "Email: "+ email + " Telefono: "+telefono);
         }
         
     }
