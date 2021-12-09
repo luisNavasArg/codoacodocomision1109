@@ -22,6 +22,8 @@ public class AlumnosController extends HttpServlet {
             accion = request.getParameter("accion");
             if(accion == null || accion.isEmpty()){
                 dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+            }else if(accion.equals("modificar")){
+                dispatcher = request.getRequestDispatcher("Vistas/modificar.jsp");
             }
             dispatcher.forward(request,response);
     }
