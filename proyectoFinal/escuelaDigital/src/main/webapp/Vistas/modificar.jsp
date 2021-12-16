@@ -27,7 +27,7 @@
         <!-- agregar el id oculto -->
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <form class="p-5 w-50" action="AlumnosController?accion=insert"
+                <form class="p-5 w-50" action="AlumnosController?accion=actualizar"
                       method="POST">
                     <div class="mb-3">
                         <label for="id" class="form-label"></label>
