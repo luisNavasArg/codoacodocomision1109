@@ -117,7 +117,7 @@ public class AlumnosDAO {
         PreparedStatement ps;
         ResultSet rs;
         try{
-            ps = conexion.prepareStatement("SELECT * FROM usuarios WHERE email=?");
+            ps = conexion.prepareStatement("SELECT email, password FROM usuarios WHERE email=?");
             ps.setString(1, usuario);
             rs = ps.executeQuery();
             while(rs.next()){

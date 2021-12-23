@@ -18,27 +18,25 @@ public class Conexion {
         }
             return conexion;
     }
-   public static void main (String regulo[]) throws SQLException{
+  /* public static void main (String regulo[]) throws SQLException{
         Connection c = null;
         Conexion con = new Conexion();
         c = con.getConection();
         PreparedStatement ps;
         ResultSet rs;
         
-        ps = c.prepareStatement("SELECT * FROM participantes");
+        ps = c.prepareStatement("SELECT * FROM usuarios");
         rs = ps.executeQuery();
         
         while(rs.next()){
             int id = rs.getInt("id");
-            String nombres = rs.getString("nombres");
-            String apellidos = rs.getString("apellidos");
-            String email = rs.getString("email");
-            String telefono = rs.getString("telefono");
+            String nombres = rs.getString("email");
+            String password = rs.getString("password");
+            
             
             System.out.println(" Id: " + id + " Nombre: "+ nombres+ " Apellidos: "
-            + apellidos +" Email: "+ email + " Telefono: "+
-                    telefono);
+            + password +" Email: "+ nombres);
         }
         
-    }
+    }*/
 }

@@ -1,7 +1,6 @@
 package controlador;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -51,9 +50,14 @@ public class AlumnosController extends HttpServlet {
                 alum.insertarAlumno(alumno);
                 dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
             }else if(accion.equals("ingresar")){
-                String usuario = request.getParameter("usuario");
-                String clave = request.getParameter("password");
+                String usuario = request.getParameter("email");
+                String clave = request.getParameter("pass");
                 boolean ingresa = alum.ingresarUsuario(usuario,clave);
+                if(ingresa){
+                    dispatcher = request.getRequestDispatcher("Vistas/alumnos.jsp");
+                }else{
+                    dispatcher = request.getRequestDispatcher("index.jsp");
+                }
             }
             dispatcher.forward(request,response);
     }
